@@ -1,0 +1,94 @@
+
+
+<!DOCTYPE html>
+
+<!--
+File: index.html
+GUI Assignment: jQuery UI Slider and Tab Widgets
+Ssuna Mulindwa, UMass Lowell Computer Science, ssuna_mulindwa@student.uml.edu
+Copyright (c) 2021 by ssunaMulindwa. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by SM on August 9, 2021 at 9:23 AM
+-->
+
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <title>Dynamic Multiplication Table</title>
+		<!-- jQuery UI css -->
+		<link type="text/css" rel="stylesheet" href="css/jquery-ui.min.css">
+		<!-- stylesheets -->
+        <link type="text/css" rel="stylesheet" href="css/multi.css">
+    </head>
+
+    <body>
+		<div id="main">
+			<!-- User input form with Error tag message -->
+			<form id="input-form">
+
+          <h2>Multiplication Table</h2>
+          <marquee  height=25px
+                    bgcolor="Green"
+                    direction="left"
+                    loop="">FIll the fields with numerical values between -100 to 100, then hit Submit button to
+                            generate a Dynamic Multiplication Table...</marquee><br><br>
+
+				<p class="inputf"><br><label>Min Vertical Value:</label><input type="text" id="fCol" name="fCol" placeholder="Min Column" size="10" value="0"></p>
+				<div id="slider1" class="inputslider"></div>
+				<br><br>
+
+				<p class="inputf"><label>Max Vertical Value:</label><input type="text" id="lCol" name="lCol" placeholder="Max Column" size="10" value="0"></p>
+				<div id="slider2" class="inputslider"></div>
+				<br><br>
+
+				<p class="inputf"><br><label>Min Horizontal Value:</label><input type="text" id="fRow" name="fRow" placeholder="Min Row" size="10" value="0"></p>
+				<div id="slider3" class="inputslider"></div>
+				<br><br>
+
+				<p class="inputf"><label>Max Horizontal Value:</label><input type="text" id="lRow" name="lRow" placeholder="Max Row" size="10" value="0"></p>
+				<div id="slider4" class="inputslider"></div>
+
+				<br><br>
+
+
+				<!--Submit Button-->
+				<input type="submit" id="button-submit" value="Save Table">
+
+        <!--clear the table-->
+        <button onclick="document.getElementById('myInput').value = ''">Clear table</button>
+
+  
+
+				<!-- Error Meaage Output -->
+				<div id='errorMessage'></div>
+			</form>
+		</div>
+
+		<div class="clear"></div>
+		<!-- Table output -->
+		<div id='table'></div>
+
+		<div class="clear"></div>
+		<div id="msgnotes">Save Tabs Below</div>
+		<br />
+		<!-- Tabs Savers -->
+    <div id="divTabs">
+			<ul id="ulTabs"></ul>
+		</div>
+
+        <!--Display footer-->
+        <div class="clear"></div>
+        <div id="footer">
+          <p>Copyright &copy; 2021 </p>
+
+        </div>
+	<!-- jQuery -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+	<!-- jQuery UI-->
+    <script src="js/jquery-ui.min.js"></script>
+	<!-- jQuery Validation plugin -->
+    <script src="js/jquery.validate.js"></script>
+    <!--load javascript file-->
+    <script type="text/javascript" src="js/table.js"></script>
+    </body>
+</html>

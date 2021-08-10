@@ -1,0 +1,169 @@
+/*
+File: multi.css
+GUI Assignment: jQuery UI Slider and Tab Widgets
+Ssuna Mulindwa, UMass Lowell Computer Science, ssuna_mulindwa@student.uml.edu
+Copyright (c) 2021 by ssunaMulindwa. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by SM on August 9, 2021 at 9:23 AM
+
+*/
+/* background color tag */
+body{
+    background-color: #C4A484;
+    text-align: center;
+
+}
+
+h2{
+    text-align: center;
+    color: #4287f5;
+  }
+
+/* For Main div with red color border */
+#main {
+    margin-left: auto;
+    margin-right: auto;
+    /*margin-left: 10px;*/
+    max-width: 700px;
+    min-width: 20%;
+    padding: 10px;
+    border: 1px solid #800303;
+    background-color: #808080;
+
+}
+
+
+.link {
+    float: right;
+}
+
+/* Table output */
+#table {
+    max-width: 5%;
+    padding: 10px;
+    margin: 0 auto;
+	  float: center;
+
+}
+/* Table's style */
+#style-table {
+    border-spacing: 1px;
+    /* width: 100%; */
+    empty-cells: hide;
+}
+
+
+/* First Row and Column Color */
+td.header {
+    background-color: black;
+    color: #FFF;
+    border: #FFF 1px thin;
+	  padding: 1px;
+    text-align: center;
+    font-family: 'Julius Sans One', sans-serif;
+	  font-size: 12pt;
+}
+
+/* Child with blank color in table */
+td.child-blank {
+    text-align: center;
+    border: 2px solid black;
+	  padding: 1px;
+    width: 12px;
+    height: 12px;
+	  font-size-adjust: 0.58;
+}
+
+/* Child with background color in table */
+td.child-color {
+    text-align: center;
+    border: 2px solid black;
+    background-color: #FC886F;
+	  padding: 1px;
+    width: 12px;
+    height: 12px;
+	  font-size-adjust: 0.58;
+}
+
+/* for footer use only */
+#footer {
+    font-style: italic;
+    margin: auto;
+}
+
+
+
+/* Tabs styling */
+.tab.ui-state-default {
+  background: red;
+  color: white;
+}
+
+/* Active tab styling */
+.tab.ui-state-active {
+  background: #004c00;
+  color: black;
+}
+
+
+/* for jQuery plugin generates error */
+.error {
+  color: red;
+}
+
+#fCol-error, #lCol-error, #fRow-error, #lRow-error {
+	margin-left: 2em;
+	  display: inline;
+}
+
+.ui-slider-horizontal {
+	height: 10px;
+    width: 200px;
+	left: 10px;
+}
+
+.ui-slider .ui-slider-handle {
+    height: 15px;
+    width: 10px;
+    padding-top: 5px;
+}
+
+.inputf {
+	display: inline;
+}
+
+.inputslider {
+	display: inline-block;
+}
+
+label {
+	display: inline-block;
+	width: 80px;
+}
+
+
+/* For make div in stay in order*/
+.clear{
+    clear: both;
+}
+
+/* For note before divTabs */
+#msgnotes {
+	padding-left: 10px;
+}
+
+/* Save Table tabs style */
+#divTabs {
+    width:400px;
+    padding:5px;
+    border:1px solid #636363;
+    background:#c2c2c2 none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* for li tag in divTabs */
+#divTabs li .ui-icon-close {
+  float: left;
+  margin: 0.4em 0.2em 0 0;
+  cursor: pointer; }
