@@ -21,3 +21,5 @@ This part will look at two jQuery UI components: the slider and the tabbed inter
 use the HTML5 slider, and I know that some of you have already programmed your own tabbed
 interface for previous assignments, either from scratch or using a different JavaScript
 library. However for this assignment you must use the components in the jQuery UI library.
+
+Below is a link to the github page
